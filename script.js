@@ -35,6 +35,8 @@ function displayKey(key) {
 // }
 
 document.getElementById('generateBtn').addEventListener('click', function () {
+    const audioPlayer = document.getElementById('audioPlayer');
+    audioPlayer.play();
     axios.get('https://warp-api-cwu2.onrender.com/random-key', {
         headers: {
             'VONEZ-TOKEN': 'TANGINAMO-BOBO-KABA-HA'
